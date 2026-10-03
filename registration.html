@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <h1>Student Registration Form</h1>
+    <p>Please complete the form below to register.</p>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+        <p>
+            <label for="full-name">Full Name:</label><br>
+            <input type="text" id="full-name" name="full_name" placeholder="Enter your full name" autocomplete="name" required>
+        </p>
+
+        <p>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="name@example.com" autocomplete="email" required>
+        </p>
+
+        <p>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" placeholder="At least 8 characters" minlength="8" autocomplete="new-password" required>
+        </p>
+
+        <p>
+            <label for="age">Age:</label><br>
+            <input type="number" id="age" name="age" placeholder="Enter your age" min="1" max="120" required>
+        </p>
+
+        <p>
+            <label for="date-of-birth">Date of Birth:</label><br>
+            <input type="date" id="date-of-birth" name="date_of_birth" autocomplete="bday" required>
+        </p>
+
+        <fieldset>
+            <legend>Gender:</legend>
+            <input type="radio" id="gender-female" name="gender" value="female" required>
+            <label for="gender-female">Female</label>
+
+            <input type="radio" id="gender-male" name="gender" value="male">
+            <label for="gender-male">Male</label>
+
+            <input type="radio" id="gender-nonbinary" name="gender" value="nonbinary">
+            <label for="gender-nonbinary">Non-binary</label>
+
+            <input type="radio" id="gender-prefer-not-to-say" name="gender" value="prefer-not-to-say">
+            <label for="gender-prefer-not-to-say">Prefer not to say</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Skills (select all that apply):</legend>
+            <input type="checkbox" id="skill-html" name="skills" value="html">
+            <label for="skill-html">HTML</label>
+
+            <input type="checkbox" id="skill-css" name="skills" value="css">
+            <label for="skill-css">CSS</label>
+
+            <input type="checkbox" id="skill-python" name="skills" value="python">
+            <label for="skill-python">Python</label>
+
+            <input type="checkbox" id="skill-other" name="skills" value="other">
+            <label for="skill-other">Other</label>
+        </fieldset>
+
+        <p>
+            <label for="course">Course:</label><br>
+            <select id="course" name="course" required>
+                <option value="" disabled selected>Select a course</option>
+                <option value="web-development">Web Development</option>
+                <option value="computer-science">Computer Science</option>
+                <option value="data-science">Data Science</option>
+                <option value="cybersecurity">Cybersecurity</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="profile-picture">Profile Picture:</label><br>
+            <input type="file" id="profile-picture" name="profile_picture" accept="image/*">
+        </p>
+
+        <p>
+            <label for="about-yourself">About Yourself:</label><br>
+            <textarea id="about-yourself" name="about_yourself" rows="5" cols="40" placeholder="Tell us a little about yourself"></textarea>
+        </p>
+
+        <p>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </p>
+    </form>
+</body>
+</html>
